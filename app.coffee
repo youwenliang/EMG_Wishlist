@@ -16,9 +16,10 @@ scrollComp = new ScrollComponent
 		left: 0
 
 # - nav
-nav.parent = Home
 nav.x = 0
 nav.y = Screen.height - 48
+nav.z = 100
+nav.superLayer = Home
 
 collection_nameList = ["Wishlist", "Shopping List", "Travel List", "Documents"]
 collection_arrayList = []
@@ -163,10 +164,10 @@ updateCollection = () ->
 # - states
 toast.states.hide = 
 	opacity: 0
-	y: Screen.height
+	y: Screen.height - 250
 toast.states.show =
 	opacity: 1 
-	y: Screen.height - 100
+	y: Screen.height - 270
 	animationOptions:
 		time: .6
 
@@ -202,6 +203,13 @@ check.onClick ->
 
 app.onClick ->
 	flowComp.showOverlayCenter(App)
-	Utils.delay .2, ->
-		nav.parent = App
-	
+	nav.superLayer = App
+tokopedia_icon.onClick ->
+	flowComp.showOverlayCenter(Tokopedia)
+	nav.superLayer = Tokopedia
+lazada_icon.onClick ->
+	flowComp.showOverlayCenter(Lazada)
+	nav.superLayer = Lazada
+back_btn.onClick ->
+	flowComp.showPrevious()
+	nav.superLayer = Home
