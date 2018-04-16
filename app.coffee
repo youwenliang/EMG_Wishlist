@@ -15,6 +15,11 @@ scrollComp = new ScrollComponent
 		bottom: 0 #add paddingBottom
 		left: 0
 
+# - nav
+nav.parent = Home
+nav.x = 0
+nav.y = Screen.height - 48
+
 collection_nameList = ["Wishlist", "Shopping List", "Travel List", "Documents"]
 collection_arrayList = []
 input_array = []
@@ -81,7 +86,7 @@ input_button.states.show =
 	z: 10
 check.states.disabled = 
 	"pointer-events": "none"
-	opacity: 0
+	opacity: .2
 check.states.enabled =
 	opacity: 1 
 
@@ -93,12 +98,12 @@ input_button.onClick ->
 			backgroundColor: "#ddd"
 			name: 'input'
 			parent: Panel
-			text: "Name your collection"
+			text: "Name your Collection"
 			fontSize: 30
 			x: 30
-			y: 85
-			width: 230
-			height: 30
+			y: 90
+			width: 260
+			height: 20
 		input_array.push(input)
 		input.onValueChange ->
 			if(input.value == "")
@@ -134,6 +139,7 @@ updateCollection = () ->
 				borderRadius: 100
 				backgroundColor: "#000000"
 				opacity: .5
+			toast_background.placeBehind(toast_message)
 			input_array.push(toast_background);
 			toast.animate('show')
 			Utils.delay 3, ->
@@ -145,6 +151,8 @@ updateCollection = () ->
 			fontSize: 12
 			color: "#fff"
 			padding: 20
+			width: 150
+		collection_text.autoWidth = yes
 	if collection_arrayList.length > 4
 		scrollComp.contentInset =
 			bottom: 20
@@ -164,24 +172,36 @@ toast.states.show =
 
 # - init
 toast.z = 20
+toast_message.z = 30
 toast.stateSwitch("hide")
 
 # - action
 check.onClick ->
-	flowComp.showPrevious()
-	collection_nameList.unshift(collection_name)
-	toast_background = new Layer
-		parent: toast
-		x: Align.center
-		y: Align.center
-		z: -1
-		width: toast_message.width + 40
-		height: 45
-		borderRadius: 100
-		backgroundColor: "#000000"
-		opacity: .5
-	input_array.push(toast_background);
-	toast.animate('show')
-	Utils.delay 3, ->
-		toast.animate('hide')	
+	if(check.opacity == 1)
+		flowComp.showPrevious()
+		collection_nameList.unshift(collection_name)
+		toast_background = new Layer
+			parent: toast
+			x: Align.center
+			y: Align.center
+			z: -1
+			width: toast_message.width + 40
+			height: 45
+			borderRadius: 100
+			backgroundColor: "#000000"
+			opacity: .5
+		toast_background.placeBehind(toast_message)
+		input_array.push(toast_background);
+		toast.animate('show')
+		Utils.delay 3, ->
+			toast.animate('hide')	
 
+####################################################
+# 4. App
+####################################################
+
+app.onClick ->
+	flowComp.showOverlayCenter(App)
+	Utils.delay .2, ->
+		nav.parent = App
+	
