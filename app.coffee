@@ -2,6 +2,10 @@
 
 flowComp = new FlowComponent
 flowComp.showNext(Home)
+flowComp.header = statusbar_black
+flowComp.footer = nav
+state = "Home"
+
 scrollComp = new ScrollComponent
 	parent: Panel
 	width: Panel.width
@@ -15,14 +19,14 @@ scrollComp = new ScrollComponent
 		bottom: 0 #add paddingBottom
 		left: 0
 
-# - nav
-nav.x = 0
-nav.y = Screen.height - 48
-nav.z = 100
-nav.superLayer = Home
-
 collection_nameList = ["Wishlist", "Shopping List", "Travel List", "Documents"]
 collection_arrayList = []
+app_List = {
+	"App": App,
+	"Home": Home,
+	"Tokopedia": Tokopedia,
+	"Lazada": Lazada
+}
 input_array = []
 collection_name = ""
 
@@ -33,11 +37,13 @@ collection_name = ""
 # - states
 notification.states.hide =
 	opacity: 0
+	x: 0
 	y: -81
 	animationOptions:
 		time: .4
 notification.states.show =
 	opacity: 1
+	x: 0
 	y: 24
 	animationOptions:
 		time: .4
@@ -55,10 +61,14 @@ notification.stateSwitch("hide")
 # notification.draggable.overdrag = false
 
 # - action
-background.onClick ->
-	notification.stateCycle()
+recent_btn.onClick ->
+	notification.parent = app_List[state]
+	notification.animate("show")
 	Utils.delay 4, ->
 		notification.animate('hide')
+
+
+
 
 notification.onClick (event) ->
 	updateCollection()
@@ -142,6 +152,7 @@ updateCollection = () ->
 				opacity: .5
 			toast_background.placeBehind(toast_message)
 			input_array.push(toast_background);
+			toast.parent = app_List[state]
 			toast.animate('show')
 			Utils.delay 3, ->
 				toast.animate('hide')	
@@ -164,10 +175,12 @@ updateCollection = () ->
 # - states
 toast.states.hide = 
 	opacity: 0
-	y: Screen.height - 250
+	x: Align.center
+	y: Screen.height - 150
 toast.states.show =
 	opacity: 1 
-	y: Screen.height - 270
+	x: Align.center
+	y: Screen.height - 170
 	animationOptions:
 		time: .6
 
@@ -193,6 +206,7 @@ check.onClick ->
 			opacity: .5
 		toast_background.placeBehind(toast_message)
 		input_array.push(toast_background);
+		toast.parent = app_List[state]
 		toast.animate('show')
 		Utils.delay 3, ->
 			toast.animate('hide')	
@@ -202,14 +216,14 @@ check.onClick ->
 ####################################################
 
 app.onClick ->
-	flowComp.showOverlayCenter(App)
-	nav.superLayer = App
+	flowComp.showNext(App)
+	state = "App"
 tokopedia_icon.onClick ->
-	flowComp.showOverlayCenter(Tokopedia)
-	nav.superLayer = Tokopedia
+	flowComp.showNext(Tokopedia)
+	state = "Tokopedia"
 lazada_icon.onClick ->
-	flowComp.showOverlayCenter(Lazada)
-	nav.superLayer = Lazada
+	flowComp.showNext(Lazada)
+	state = "Lazada"
 back_btn.onClick ->
 	flowComp.showPrevious()
-	nav.superLayer = Home
+	state = "Home"
