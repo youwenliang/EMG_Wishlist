@@ -1,0 +1,154 @@
+.git/COMMIT_EDITMSG
+.git/config
+.git/description
+.git/HEAD
+.git/hooks/applypatch-msg.sample
+.git/hooks/commit-msg.sample
+.git/hooks/post-update.sample
+.git/hooks/pre-applypatch.sample
+.git/hooks/pre-commit.sample
+.git/hooks/pre-push.sample
+.git/hooks/pre-rebase.sample
+.git/hooks/pre-receive.sample
+.git/hooks/prepare-commit-msg.sample
+.git/hooks/update.sample
+.git/index
+.git/info/exclude
+.git/logs/HEAD
+.git/logs/refs/heads/master
+.git/logs/refs/remotes/origin/HEAD
+.git/logs/refs/remotes/origin/master
+.git/objects/03/dbdc756a3f0c390c650eb54570378c001faf8e
+.git/objects/12/376bffda326d355b562714fc29e16006d92982
+.git/objects/15/073dbeeffcad11b247b1e95c985e3d8d064722
+.git/objects/1a/c085268df487336fd51c53f7ed271bffb38ea7
+.git/objects/1c/3b677f8159ca8719ad8c18c6944965630680d5
+.git/objects/1c/eeb5e4351a9d173658e5dcdd516bcb086584cd
+.git/objects/2c/da6d93933b83abaf98c100ba6494ade12a7296
+.git/objects/2d/8a23b3355bfdd46b7fb1798bd8a1abf709f9e8
+.git/objects/2f/a9a80a2d4e17bf450929622367004b15a71266
+.git/objects/33/4fb3ca16868c02c980e2682a71014e0420c92f
+.git/objects/35/dc16f1d420bce2ed881cdd7a117f623a7013bc
+.git/objects/36/6502e6dbc1dd05c26599945ac3dc356e281632
+.git/objects/3b/6fb62b3b3243dd6bc878b400ad52d700eb1d93
+.git/objects/3c/025a8d278dcb2bbe64488be8ce13fd5a3bff04
+.git/objects/3e/cd8db15b93c0c0854d13f350307ae27354c24e
+.git/objects/45/5a04efa394b5e33523b0c788db990903884b1c
+.git/objects/45/79adea871234e9b2b7c40c969e37eb94898e46
+.git/objects/48/52ce6f2faafc675d2d26d44bdc81ea832353c3
+.git/objects/48/9870068d8385d4d2adfd4dfc153e7e5aa69750
+.git/objects/4c/c4d7819ff09333d63f8e7ed0a8fb024cbfd19e
+.git/objects/51/f523157b0ca188fbabfee9d5975cc49876c69e
+.git/objects/55/9219dac29cce28a51ed242fa10a18827fa03a9
+.git/objects/56/51abcb244c5366255bff4b4848b15d38926c51
+.git/objects/59/18aa560226f3379d9a39b0447c47627df52993
+.git/objects/59/6c5ab4336c9750b745568969e8dd8155f93081
+.git/objects/59/d6327f9f1011f27e0c38ab6b3f3b1d7c69b946
+.git/objects/5a/7fe60ddf170f224925d0391cee5b021f6b30c1
+.git/objects/5c/e9116382e06d89828828e895200d1a956e8928
+.git/objects/63/eec4bdc09ed42a98e03217e7bb6a7fbc2db4c5
+.git/objects/65/b338424ea139f9c3b248ffd402759599e28127
+.git/objects/67/5b3c67bcf7ad2c6716555d1a322efb8f2d5465
+.git/objects/6a/91c0c0242a02cdfc9fcdebb064e66dc74b0982
+.git/objects/6b/eb5ea1254c18bed2d10d624a39e51eef9363df
+.git/objects/6e/0dfa2d7683816c61ebcb0f5f95a62cdf6aa6b0
+.git/objects/6e/a987585c65d37840a0a60dbf51856b561a47ba
+.git/objects/70/e2027e88b28c716929cfec1189c411da38d2df
+.git/objects/71/9a01cfd625f373553420933f1aa7a890713c31
+.git/objects/74/b1c6ae73b82daf4435ba34c33ccda52a104390
+.git/objects/7f/c00969683fb27a7557d87f7780c7becd18c609
+.git/objects/80/6ce7bbac4004bb5aaf2960cd2757b52f930493
+.git/objects/83/b9886d1252f3d2230c3656f108a4d39193e4a4
+.git/objects/84/93b755bbf9564d55cd6aff5817e8c2b7beceff
+.git/objects/85/9cfda733629062baa68be6cb0acb29c26929eb
+.git/objects/85/ac61b5ed1f2c15fc3256c73fef9bd6395b3ad5
+.git/objects/8a/b28fc9276ecb8dbdea9dbe589ad5538411abef
+.git/objects/8c/e6058b0afa414de19b58d94889d9cfa252c7eb
+.git/objects/93/efa8a14f6162f66a1b434bb55202a5dc72ddb9
+.git/objects/97/0d176784ec1f3e36f17e955f72faadecf52df0
+.git/objects/98/088f5af88eca2235e1e73f060abd6e1afb7006
+.git/objects/98/638ce4f132dbd83965cbeee8184668bc4cf65c
+.git/objects/9c/4f99b22a56fb8c71bac4b077baf261ac8a175e
+.git/objects/9e/3929baec6d2cef20cce9ad44137041602dfd0a
+.git/objects/9e/751d0ce0d72fa9848422381d8e43e4e189327a
+.git/objects/a3/ae7315264a6894cc3d0007169d1024124a7d26
+.git/objects/a3/b1a144a1cdde2d85dc2f1ba2cbb26301914dd6
+.git/objects/a5/03abe84373c8ef89431c7bb4bdf9644b67b10a
+.git/objects/a8/18dc00139ecec60892767c55b4bc78a02ad882
+.git/objects/a8/70831b6de832aab66a2244cfaa186739097c6b
+.git/objects/ac/88b837a94b8f133259b8457ad17a5e7d657b64
+.git/objects/af/518331dbddf1820330c4bd364129ab4aab8520
+.git/objects/b0/7119ef55f4ee2b2afd3b9ed2de6f7dcae51665
+.git/objects/b4/5d4f06585bb3e179121d5a1a6abf11c94b811a
+.git/objects/b7/206a5178262fd9d5bf6e400c844751f918e144
+.git/objects/b7/c76f14e141298741eaa203ed2c6849fc4d678a
+.git/objects/bb/28f22c71db9f68b93a101c23ce033a71344ac7
+.git/objects/bc/7ba40e51c1c7434b1b96c010e338be4358f65a
+.git/objects/bd/7509dc809b851b20056f64c5165759b9510905
+.git/objects/c2/f26a138c23d6482ac60acc6cb2ed26dc9da461
+.git/objects/c6/a00374ff77c9496d550a6eedc5803ba98ef642
+.git/objects/ca/7bf83ac53a27a2a914bed25e1a07478dd8ef47
+.git/objects/ca/7cdb282099d075f68fe482ccef755d33f6610f
+.git/objects/d0/ef2caa3f5320e5f783d657cf38a92f50201eeb
+.git/objects/d7/d167162c9c96d42c4cfb5374c72b26bef1ea72
+.git/objects/d9/8763c0932d38432ca1bec5a48fe12a3b0d99e0
+.git/objects/db/498d779256ea214b4f78b3b2ea376ada784c13
+.git/objects/e2/472a2c2e656ab52b5e554701301946ba9f893f
+.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+.git/objects/ec/f784baeb21012884a7fd3075b49c7286f313f4
+.git/objects/f2/20a46b53123c748ab1ef9450aae9a49e8d79a9
+.git/objects/fd/bd84ba9af2196864325cc4bb2cd0def809c2b3
+.git/objects/ff/a5d664e943398e39fe3e7dc690ae3ed9d5f56f
+.git/packed-refs
+.git/refs/heads/master
+.git/refs/remotes/origin/HEAD
+.git/refs/remotes/origin/master
+app.coffee
+framer/63e0efb6f64b5260c9996fc8df0117aa._gstmp
+framer/coffee-script.js
+framer/config.json
+framer/framer.generated (Conflicted copy from Mark-iMac on 2018-04-17) (1).js
+framer/framer.generated (Conflicted copy from Mark-iMac on 2018-04-17).js
+framer/framer.generated.js
+framer/framer.init.js
+framer/framer.js
+framer/framer.modules (Conflicted copy from Mark-iMac on 2018-04-17) (1).js
+framer/framer.modules (Conflicted copy from Mark-iMac on 2018-04-17).js
+framer/framer.modules.js
+framer/framer.vekter.js
+framer/images/cursor-active.png
+framer/images/cursor-active@2x.png
+framer/images/cursor.png
+framer/images/cursor@2x.png
+framer/images/icon-120.png
+framer/images/icon-152.png
+framer/images/icon-180.png
+framer/images/icon-192.png
+framer/images/icon-76.png
+framer/manifest (Conflicted copy from Mark-iMac on 2018-04-17) (1).txt
+framer/manifest (Conflicted copy from Mark-iMac on 2018-04-17) (2).txt
+framer/manifest (Conflicted copy from Mark-iMac on 2018-04-17) (3).txt
+framer/manifest (Conflicted copy from Mark-iMac on 2018-04-17) (4).txt
+framer/manifest (Conflicted copy from Mark-iMac on 2018-04-17).txt
+framer/manifest.txt
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (1).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (2).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (3).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (4).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (5).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (6).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (7).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17) (8).png
+framer/preview (Conflicted copy from Mark-iMac on 2018-04-17).png
+framer/preview.png
+framer/style.css
+framer/version
+images/design/1pSbNWRt6iHP2poDRdGg57G1regSTx4B0tuxSQTDoTEYawfS5y1rXqIzFDwnkGujpl6SXrmmr76lo640kJhw.png
+images/design/8ftlfmWpvZ5xHSkUzToys5pziV27GYfUfdLt7t40fkVOr5Y29HnErgADYKZOA4XiqTIuu7qdyR5cx7mRgZrQ.png
+images/design/Oj669Rk95f4LnTa7C17Aa9ckEoohCdVD3CERGniOQFgY3eJIiallqT30mF9TFYwAfEgxBqPJht25hoor8B0Q.png
+images/design/v5Vyoudwrsuiuvpns7tTT1lqtbI3IQMDTnnEO2jbdGxO1rjuiQL83RbGpyQphvxqJuIF9niYAK02U9kkg.png
+index.html
+modules/input.coffee
+modules/myModule.coffee
+modules/Text.coffee
+README.md
